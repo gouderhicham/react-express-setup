@@ -1,5 +1,4 @@
 import React, { useState , useEffect} from "react";
-
 function App() {
   // input from the user
   let [name, setName] = useState("");
@@ -24,7 +23,6 @@ function App() {
     setName(e.target.value);
   }
   // testing the get method request to see if it works (open console to see => message : api works ! <= this was the response from the server)
-
   useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
